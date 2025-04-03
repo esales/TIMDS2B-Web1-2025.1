@@ -1,0 +1,78 @@
+<html>
+<head>
+    <title>Tabela</title>
+
+    <style>
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 50%;
+            font-size: 30px;
+            font-family: 'Courier New';
+        }
+
+        th {
+            border: 1px solid black;
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+
+        thead{
+            background-color: blue;
+            color: white;
+        }
+
+        tr:nth-child(even){
+            background-color: lightgoldenrodyellow;
+        }
+
+        tr:hover{
+            background-color: lightblue;
+        }
+
+        td:hover{
+            background-color: lightgreen;
+        }
+
+        p{
+            text-decoration: overline;
+            font-weight: 600;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <p>Texto de exemplo</p>
+
+    <table>
+        <thead>
+            <th>Código</th>
+            <th>Animal</th>
+            <th>Ícone</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Rato</td>
+                <td>&#128000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Vaca</td>
+                <td>&#128004</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Tigre</td>
+                <td>&#128005</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
