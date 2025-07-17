@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Eventos</title>
+</head>
+<body>
+    
+    <div id="botao">Clique</div>
+    <br>
+    <input type="text" id="campoTexto">
+
+    <script>
+        let botao = document.querySelector('#botao');
+
+        botao.addEventListener('click', ()=>console.log('click'));
+        botao.addEventListener('mousedown', ()=>console.log('mousedown'));
+        botao.addEventListener('mouseup', ()=>console.log('mouseup'));
+        botao.addEventListener('dblclick', ()=>console.log('dblclick'));
+        botao.addEventListener('mouseover', ()=>console.log('mouseover'));
+        botao.addEventListener('mouseout', ()=>console.log('mouseout'));
+
+        let campo = document.querySelector('#campoTexto');
+        campo.addEventListener('focus', ()=>console.log('focus'));
+        campo.addEventListener('blur', ()=>console.log('blur'));
+        campo.addEventListener('mouseover', (event)=>console.log(event));
+
+        campo.addEventListener('keydown', (event) => console.log( `tecla = ${event.key}`))
+
+    </script>
+    
+</body>
+</html>

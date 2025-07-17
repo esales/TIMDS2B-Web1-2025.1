@@ -1,0 +1,86 @@
+<html>
+<head>
+    <title>Js</title>
+
+    <style>
+        .exemplo1{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        .exemplo2{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p>abcde</p>
+    <p id="primeiro">Parágrafo 1</p>
+    <p class="teste">Parágrafo 2</p>
+    
+    <a href="https://www.google.com">Link</a>
+    <input type="text" name="descricao">
+
+    <div></div>
+
+    <br><br>
+    <button onclick="funcao()">Botão 1</button>
+    <button onclick="mudaCor()">Muda cor</button>
+    <button onclick="mudarVariasClasses()">Mudar classe</button>
+    <button onclick="retirarBackground()">Retirar Background</button>
+    <button onclick='mudarBackground()'>Mudar background</button>
+
+    <button id="botao">clique</button>
+
+    <script>
+        let elemento = document.querySelector('#botao');
+        elemento.addEventListener('click', function (){ alert('clicou')})
+
+        function funcao(){
+            let elemento = document.querySelector("p");
+
+            console.log(elemento);
+
+            let elementos = document.querySelectorAll("p");
+
+            console.log(elementos);
+        }
+
+        function mudaCor(){
+            let elemento = document.querySelector("p");
+
+            elemento.style.color = "blue";
+        }
+
+        function mudarClasse(){
+            let elemento = document.querySelector("div");
+
+            elemento.className = 'exemplo1';
+        }
+
+        function mudarVariasClasses(){
+            let elemento = document.querySelector("div");
+
+            elemento.classList.add('exemplo1', 'exemplo2');
+
+        }
+
+        function retirarBackground(){
+            let elemento = document.querySelector("div");
+
+            elemento.classList.remove('exemplo2');
+        }
+
+        function mudarBackground(){
+            let elemento = document.querySelector("div");
+
+            if (elemento.classList.contains('exemplo2')){
+                elemento.classList.remove('exemplo2');
+            } else{
+                elemento.classList.add('exemplo2');
+            }
+        }
+    </script>
+</body>
+</html>
