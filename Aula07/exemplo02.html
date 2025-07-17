@@ -1,0 +1,67 @@
+<html >
+<head>
+    <title>Seletores</title>
+    <style>
+        div{
+            background-color: blue;
+            color: white;
+            width: 100px;
+            height: 100px;
+        }
+
+        div:hover{
+            background-color: sandybrown;
+            border-radius: 50px;
+            transition: 0.5s;
+            transform: rotate(360deg);
+        }
+
+        a{
+            font-size: 40px;
+            text-decoration: none;
+        }
+
+        a:link{
+            color: blue;
+        }
+        a:visited{
+            color: red;
+        }
+        a:hover{
+            color: green;
+        }
+        a:active{
+            color: yellow;
+        }
+
+        input:focus{
+            background-color: turquoise;
+        }
+
+        p::first-letter{
+            font-size: 30px;
+            color: red;
+        }
+
+        p::first-line{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+
+    <a href="https://www.google.com">Link para o Google</a> 
+    <br>
+    <a href="https://www.ifpe.edu.br">Link para o IFPE</a>
+    <br>
+    <a href="https://www.bbc.com">Link para a BBC</a>
+    <br>
+    <input type="text" name="" id="">
+    
+    <br>
+    <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor sed aut soluta ab qui beatae reiciendis perferendis sapiente sit expedita? Repellat cupiditate nemo dignissimos tenetur molestiae molestias repudiandae aperiam sapiente?</p>
+
+</body>
+</html>
