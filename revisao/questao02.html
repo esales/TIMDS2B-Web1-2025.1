@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Questão 02</title>
+    <style>
+        #exemplo{
+            width: 200px;
+            height: 100px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="exemplo"></div>
+    <button>Botão</button>
+</body>
+
+<script>
+    let div = document.getElementById("exemplo");
+    let botao = document.querySelector("button");
+
+    botao.addEventListener("click", () =>{
+        div.style.backgroundColor = "lightblue";
+    });
+</script>
+</html>

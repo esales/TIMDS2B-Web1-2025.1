@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Questão 01</title>
+</head>
+<body>
+    <input type="text" id="campo" >
+</body>
+
+    <script>
+        let campo = document.getElementById("campo");
+        // let campo = document.querySelector("#campo");
+
+        campo.addEventListener("focus", () =>{
+            campo.style.borderColor = "green";
+            campo.style.backgroundColor = "gray";
+        });
+        
+        campo.addEventListener("blur", () =>{
+            campo.style.borderColor = "gray";
+            campo.style.backgroundColor = "white";
+        });
+
+    </script>
+</html>

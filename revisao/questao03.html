@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Questão 01</title>
+</head>
+<body>
+    <p>Paragrafo 1</p>
+    <p>Paragrafo 2</p>
+    <p id="paragrafo">Paragrafo 3</p>
+    <p>Paragrafo 4</p>
+    <p class="teste">Paragrafo 5</p>
+    <p>Paragrafo 6</p>
+    <p class="teste">Paragrafo 7</p>
+    <p>Paragrafo 8</p>
+    <p>Paragrafo 9</p>
+    <p>Paragrafo 10</p>
+
+
+    <button id="botao1" onclick="porId()">Botão 1</button>
+    <button id="botao2" onclick="porClasse()">Botão 2</button>
+    <button id="botao3" onclick="porTag()">Botão 3</button>
+    <button id="botao4" onclick="porQuerySelectorAll()">Botão 4</button>
+</body>
+
+<script>
+    function porId(){
+        let elementoId = document.getElementById("paragrafo");
+        elementoId.style.color = "red";
+        elementoId.style.fontWeight = "bold";
+    }
+    
+    function porClasse(){
+        let elementosClasse = document.getElementsByClassName("teste");
+
+        for(let i = 0; i < elementosClasse.length; i++){
+            elementosClasse[i].style.color = "blue";
+            elementosClasse[i].style.fontWeight = "bold";
+        }
+    }
+
+    function porTag(){
+        let elementoTag = document.querySelector("p");
+        elementoTag.style.color = "green";
+        elementoTag.style.fontWeight = "bold";
+    }
+
+    function porQuerySelectorAll(){
+        let elementosQuery = document.querySelectorAll("p");
+
+        elementosQuery.forEach(
+            (item) => {
+                item.style.color = "purple";
+                item.style.fontWeight = "bold";
+            }
+        );
+    }
+</script>
+</html>

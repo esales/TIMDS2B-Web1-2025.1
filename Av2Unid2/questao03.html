@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>1</p>
+    <p>2</p>
+    <p class="exemplo">3</p>
+    <p class="exemplo">4</p>
+    <p class="exemplo">5</p>
+    <button id="botao"> CLIQUE</button>
+    <script>
+        let paragrafos = document.querySelectorAll('p.exemplo')
+        let botao = document.querySelector('#botao')
+        botao.addEventListener("click", () => {
+            for(i=0; i < paragrafos.length; i++){
+                let paragrafo = paragrafos[i]
+                paragrafo.style.fontSize = '40px'
+            }
+        })
+
+    </script>
+</body>
+</html>
