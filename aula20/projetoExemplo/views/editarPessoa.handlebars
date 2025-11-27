@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tela Editar Pessoa</title>
+</head>
+<body>
+    <h1>Editar Pessoa</h1>
+
+    <form action="/pessoas/{{pessoa.id}}" method="post">
+        <label for="nome">Nome</label>
+
+        <input type="text" name="nome" value="{{pessoa.nome}}" required>
+
+        <button type="submit">Salvar</button>
+    </form>
+
+    <a href="/pessoas">Voltar</a>
+</body>
+</html>
