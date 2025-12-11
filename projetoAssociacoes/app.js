@@ -92,9 +92,6 @@ app.post('/consulta', async (req, res) => {
         medicoId
     });
 
-    const teste = await models.Consulta.findAll({include: ['paciente', 'medico']});
-    console.log(teste);
-
     res.redirect('/consulta');
 });
 
